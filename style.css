@@ -449,6 +449,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 768px) {
 
     /* Menú */
+    section.menu {
+        width: 768px;
+    }
 
     /*title*/
 
@@ -457,8 +460,42 @@ Utiliza las referencias de los breakpoints @media abajo */
     /*Hobbies*/
 
     /*Formación Académica*/
+    section.academic {
+        width: 768px;
+        height: 1281px;
+    }
+
+    .academic__courses__box {
+        margin: 6%;
+    }
+
+    .academic__courses__item__title {
+        padding-top: 5%;
+    }
+
+
+    .experiencie__box {
+        width: 768px;
+    }
 
     /*Experiencia Profesional*/
+    .experiencie__box {
+        width: 768px;
+        height: 800px;
+        justify-content: flex-start;
+    }
+
+    section.formcontato {
+        width: 768px;
+        padding-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20%;
+    }
+
+    section.footer {
+        width: auto;
+    }
 
 }
 
@@ -466,21 +503,82 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 425px) {
 
     /*Menu*/
+    section.menu {
+        width: 425px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    /*Titulo*/
+    .menu__list {
+        width: 425px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    /*Sección sobre mi*/
+    .title__div {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    /*Skills*/
+    .title__bio {
+        font-size: 32px;
+        width: 425px;
 
-    /*Hobbies*/
+    }
 
-    /*Formación Académica*/
+    section.about {
+        padding-left: 80px;
+        width: 425px;
+    }
+
+    .about__paragraph {
+        width: 425px;
+    }
+
+    section.academic {
+        width: 425px;
+        height: 1281px;
+    }
+
+    .academic__courses__box {
+        margin: 6%;
+    }
+
+    .academic__courses__item__title {
+        padding-top: 5%;
+    }
+
+    #skills {
+        padding: 90px;
+        width: 425px;
+    }
+
+    section.hobbies {
+        padding: 90px;
+        width: 425px;
+    }
+
+    .experiencie__box {
+        width: 425px;
+    }
 
     /*Experiencia Profesional*/
+    .experiencie__box {
+        width: 425px;
+        height: 800px;
+        justify-content: flex-start;
+    }
 
-    /*Contacto*/
+    section.formcontato {
+        width: 425px;
+        padding-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20%;
+    }
 
-    /*Footer*/
+    section.footer {
+        width: auto;
+    }
 
 }
