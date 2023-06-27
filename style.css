@@ -17,6 +17,11 @@ coloque nas sessões indicadas*/
 
 }
 
+.tudo {
+
+    width: 1436px;
+}
+
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
@@ -93,8 +98,8 @@ section.menu {
 section.title .title__div {
     display: flex;
     flex-direction: row-reverse;
-    padding-left: 152px;
-
+    padding-left: 102px;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -113,11 +118,13 @@ section.title .title__div {
     font-weight: bold;
     font-size: 52px;
     text-align: justify;
+    width: 780px;
 }
 
 .title__subsection {
     padding-top: 5%;
     font-size: 22px;
+    width: 780px;
 }
 
 .title__network {
@@ -245,7 +252,7 @@ section.hobbies {
 section.academic {
     padding-top: 5%;
     padding-left: 152px;
-    width: 1440px;
+    width: 1436px;
     height: 581px;
     background-color: var(--cor-formacionacademica);
 }
@@ -454,10 +461,46 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*title*/
+    section.title .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 92px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 768px;
+    }
+
+    .title__bio {
+        font-size: 32px;
+        width: 768px;
+        padding-left: 90px;
+    }
+
+
+    .title__subsection {
+        width: 768px;
+        padding-left: 90px;
+    }
+
+    .title__network {
+        padding-left: 90px;
+    }
 
     /*Skills*/
+    #skills {
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px;
+        justify-content: center;
+    }
 
     /*Hobbies*/
+    section.hobbies {
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px;
+        justify-content: center;
+    }
 
     /*Formación Académica*/
     section.academic {
@@ -485,12 +528,26 @@ Utiliza las referencias de los breakpoints @media abajo */
         justify-content: flex-start;
     }
 
+    .experience__section__title {
+        width: 768px;
+
+    }
+
+    section.experience {
+        padding-left: 0px;
+        flex-wrap: nowrap;
+    }
+
     section.formcontato {
         width: 768px;
         padding-left: 0px;
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 20%;
+    }
+
+    .formcontato__text {
+        width: 768px;
     }
 
     section.footer {
@@ -508,6 +565,32 @@ Utiliza las referencias de los breakpoints @media abajo */
         display: flex;
         flex-wrap: wrap;
     }
+
+    section.title .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 92px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 425px;
+    }
+
+    .title__bio {
+        font-size: 32px;
+        width: 425px;
+        padding-left: 90px;
+    }
+
+
+    .title__subsection {
+        width: 425px;
+        padding-left: 90px;
+    }
+
+    .title__network {
+        padding-left: 90px;
+    }
+
 
     .menu__list {
         width: 425px;
@@ -553,13 +636,23 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     #skills {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
         padding: 90px;
         width: 425px;
     }
 
+
+
     section.hobbies {
         padding: 90px;
         width: 425px;
+        display: flex;
+        flex-wrap: wrap;
+        ;
+        justify-content: center;
     }
 
     .experiencie__box {
@@ -588,6 +681,16 @@ Utiliza las referencias de los breakpoints @media abajo */
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 20%;
+    }
+
+    .experience__section__title {
+        width: 425px;
+
+    }
+
+    section.experience {
+        padding-left: 0px;
+        flex-wrap: nowrap;
     }
 
     section.footer {
