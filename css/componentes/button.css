@@ -1,0 +1,31 @@
+.button {
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    width: 100%;
+
+    max-width: 15rem;
+    padding: .9rem;
+    box-sizing: border-box;
+    color: var(--contrast-ligth-color);
+    font-size: var(--font-size-button);
+    align-self: center;
+    text-align: center;
+}
+
+.simple-button {
+    border: none;
+    background-color: unset;
+}
+
+.simple-button--add {
+    color: var(--primary-color);
+}
+
+.simple-button--delete {
+    color: var(--info-color);
+}
+
+.simple-button--edit {
+    color: var(--sucess-color);
+}

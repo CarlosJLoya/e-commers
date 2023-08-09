@@ -1,0 +1,20 @@
+{
+    "Productos": [
+        {
+            "urlImagen": "url(img/starwars/unsplash_1VV1MRafd7A.png)",
+            "categoria": "starwars",
+            "producto": "Producto1",
+            "precio": "$ 60.00",
+            "descripcion": "alallalalalalalallalalalalalallalalalalalal",
+            "id": 1
+        },
+        {
+            "urlImagen": "url(img/starwars/unsplash_1VV1MRafd7A.png)",
+            "categoria": "starwars",
+            "producto": "Producto2",
+            "precio": "$ 60.00",
+            "descripcion": "alallalalalalalallalalalalalallalalalalalal",
+            "id": 2
+        }
+    ]
+}

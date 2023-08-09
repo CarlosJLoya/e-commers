@@ -1,0 +1,494 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --cor-formacionacademica: #EAF2FD;
+    --cor-footer: #FFFFFF;
+    --cor-container: #EDEDED;
+    --cor-iconos: #464646;
+    --cor-boton: #2A7AE4;
+
+}
+
+.tudo {
+    width: 1440px;
+
+    background-color: var(--cor-footer);
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+section.menu {
+
+    display: flex;
+    align-items: center;
+    padding-left: 152px;
+    padding-right: 120px;
+    width: 1136px;
+    height: 88px;
+    font-size: medium;
+}
+
+.menu__header {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 2%;
+}
+
+.menu__title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu__list__item:last-child {
+    font-weight: bold;
+}
+
+.menu__list {
+    display: flex;
+    width: 600px;
+}
+
+.input {
+    width: 393px;
+    height: 40px;
+    background-color: var(--cor-de-fundo);
+    border: none;
+    font-size: 10pt;
+    float: left;
+
+    padding-left: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.icon {
+    position: absolute;
+    padding-left: 355px;
+    margin-left: 17px;
+    margin-top: 1%;
+    z-index: 1;
+    color: #A2A2A2;
+}
+
+.login {
+    padding-left: 20%;
+}
+
+.login__boton--repo {
+    width: 182px;
+    height: 51px;
+    background-color: var(--cor-footer);
+    color: var(--cor-boton);
+    border-color: var(--cor-boton);
+}
+
+.banner {
+    width: 1440px;
+    height: 352px;
+    margin-top: 2%;
+}
+
+.textoPromocion {
+    display: flex;
+    height: 170px;
+    width: 1136px;
+    padding-left: 15%;
+    margin-top: -12%;
+    font-weight: var(--font-weigth-input);
+    position: relative;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.txtpromocionmes {
+    font-size: 3rem;
+    font-family: 'Raleway';
+    color: #F5F5F5;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.txtpromocionmes-list {
+    font-family: 'Raleway';
+    font-size: 1rem;
+    color: #F5F5F5;
+    margin-bottom: 2%;
+}
+
+.txtpromociones-button {
+    width: 116px;
+    height: 51px;
+    background-color: var(--cor-boton);
+    color: var(--cor-footer);
+    border-color: var(--cor-boton);
+}
+
+.contenidoPrincipal {
+
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 15%;
+
+}
+
+.container-subtitulo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.container-navMap-link {
+    display: flex;
+    flex-wrap: wrap;
+    color: #2A7AE4;
+}
+
+.container {
+    display: flex;
+
+
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 2%;
+}
+
+.subtitulo {
+    font-weight: bold;
+    font-size: 38px;
+    color: #464646;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+
+.input-menssage-error {
+    font-size: 10pt;
+    color: red;
+}
+
+
+.login-contacto {
+
+    margin-top: 10%;
+    height: 355px;
+}
+
+.login-parrafo {}
+
+.login-subtitulo {
+    display: flex;
+    justify-content: center;
+    color: #464646;
+    font-weight: bold;
+
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-input-email {
+    width: 30%;
+    height: 42px;
+
+    font-size: 10pt;
+    float: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+}
+
+.login-input-password {
+    width: 30%;
+    height: 42px;
+
+    font-size: 10pt;
+    float: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+}
+
+.agregarboton {
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+}
+
+@media(max-width: 769px) {
+    .tudo {
+        width: 768px;
+    }
+
+    .menu__header {
+        display: flex;
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+
+    .login {
+        padding-left: 10%;
+    }
+
+    .input {
+        width: 250px;
+    }
+
+    .icon {
+        padding-left: 215px;
+    }
+
+    section.menu {
+
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 768px;
+        height: 88px;
+        font-size: medium;
+    }
+
+    .menu__header {
+        display: flex;
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+
+    .banner {
+        width: 768px;
+        height: 352px;
+        margin-top: 2%;
+    }
+
+    .banner-img--Hero {
+        width: 768px;
+        height: 352px;
+    }
+
+    .textoPromocion {
+        display: flex;
+        height: 170px;
+        padding-left: 3%;
+        margin-top: -17%;
+
+    }
+
+    .contenidoPrincipal {
+
+        margin-top: 2%;
+        padding-left: 1.25%;
+        padding-right: 1%;
+
+    }
+
+    .container {
+        width: 758px;
+        overflow-x: auto;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-box {
+        flex-wrap: wrap;
+    }
+
+    .footer-link {
+
+        padding-left: 100px;
+    }
+
+    .footer-contacto {
+        margin-top: 0%;
+        width: 300px;
+    }
+
+    .footer-input-nombre {
+        width: 300px;
+    }
+
+    .footer-input-mensaje {
+        width: 300px;
+    }
+}
+
+@media(max-width: 360px) {
+    .tudo {
+        width: 360px;
+    }
+
+    .menu {
+        width: 360px;
+    }
+
+    .menu__header {
+        width: 10px;
+        padding-left: 0%;
+    }
+
+    .section.menu {
+        padding-left: 0%;
+    }
+
+    #buscador {
+        visibility: collapse;
+        width: 0%;
+    }
+
+    .icon {
+        padding-left: 165px;
+    }
+
+    .login__boton--repo {
+        width: 103px;
+        height: 40px;
+        padding-left: 0%;
+    }
+
+    .menu__header {
+        display: flex;
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+
+    .login {
+        padding-left: 10%;
+    }
+
+    .input {
+        width: 250px;
+    }
+
+
+
+    section.menu {
+
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 360px;
+        height: 88px;
+        font-size: medium;
+    }
+
+    .menu__header {
+        display: flex;
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+
+    .banner {
+        width: 360px;
+        height: 352px;
+        margin-top: 2%;
+    }
+
+    .banner-img--Hero {
+        width: 360px;
+        height: 352px;
+    }
+
+    .textoPromocion {
+        display: flex;
+        height: 170px;
+        padding-left: 3%;
+        margin-top: -17%;
+
+    }
+
+    .txtpromocionmes {
+        font-size: 1.25rem;
+    }
+
+    .txtpromocionmes-list {
+        font-size: .75rem;
+    }
+
+    .contenidoPrincipal {
+
+        margin-top: 2%;
+        padding-left: 1.25%;
+        padding-right: 1%;
+
+    }
+
+    .container {
+        width: 358px;
+        overflow-x: auto;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .footer-box {
+        flex-wrap: wrap;
+    }
+
+    .footer-link {
+
+        padding-left: 100px;
+    }
+
+    .footer-contacto {
+        margin-top: 0%;
+        width: 300px;
+    }
+
+    .footer-input-nombre {
+        width: 300px;
+    }
+
+    .footer-input-mensaje {
+        width: 300px;
+    }
+
+
+}

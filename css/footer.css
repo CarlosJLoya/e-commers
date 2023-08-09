@@ -1,0 +1,112 @@
+.footer-container {
+    width: 1440px;
+    height: 368px;
+
+    gap: 115px;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #EAF2FD;
+
+}
+
+.footer-logo {
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer-link {
+    display: flex;
+    width: 195px;
+    height: 234px;
+    margin-top: 5%;
+}
+
+.footer-quien {
+    display: flex;
+    margin-bottom: 15%;
+    color: #464646;
+    font-size: 16px;
+}
+
+.footer-politica {
+    display: flex;
+    margin-bottom: 15%;
+    color: #464646;
+    font-size: 16px;
+}
+
+.footer-programa {
+    display: flex;
+    margin-bottom: 15%;
+    color: #464646;
+    font-size: 16px;
+}
+
+.footer-nuestras {
+    display: flex;
+    margin-bottom: 15%;
+    color: #464646;
+    font-size: 16px;
+}
+
+.footer-quiero {
+    display: flex;
+    margin-bottom: 15%;
+    color: #464646;
+    font-size: 16px;
+}
+
+.footer-contacto {
+    margin-top: 5%;
+    padding-left: 5%;
+    height: 240px;
+    width: 560px;
+    color: #464646;
+    font-size: 20px;
+}
+
+.footer-subtitulo {
+    color: #464646;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.footer-input-nombre {
+    width: 560px;
+    height: 56px;
+    border: none;
+    font-size: 10pt;
+    float: left;
+
+    padding-left: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+}
+
+.footer-input-mensaje {
+    width: 560px;
+    height: 82px;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+}
+
+.footer-copyright {
+    display: flex;
+    height: 102px;
+    padding-left: 32px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-footer);
+}

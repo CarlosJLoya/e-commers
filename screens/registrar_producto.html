@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/error_general.css">
+    <link rel="stylesheet" href="../css/registrar_producto.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/componentes/button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title> Loyas Geek</title>
+</head>
+
+<body>
+    <div class="tudo prodcuto">
+        <section class="menu">
+            <header class="menu__header">
+                <img src="../img/Logo.png">
+            </header>
+            <div class="input-buscador">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input name="buscador" id="buscador" class="input" type="text" placeholder="¿Que deseas buscar?">
+            </div>
+            <div class="Menu Administrador">
+                <span class="menu-administrador"><a
+                        href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button
+                            class="login__boton--repo">Menu Administrador</button></a></span>
+
+            </div>
+        </section>
+        <main class="container-producto">
+            <section class="card-producto">
+                <div class="card-producto-Subtitulo">
+                    <h1 class="card-producto__title">Agregar Producto</h1>
+                </div>
+
+                <form class="producto-flex" data-form>
+                    <div class="input-label-producto">
+                        <label class="input-label-producto-text" for="urlImagen">URL Imagen</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container-producto">
+                        <input name="URLImagen" id="urlImagen" class="input-producto" type="text"
+                            placeholder="URL de Imagen del producto" required data-urlImagen />
+
+                    </div>
+                    <div class="input-label-producto">
+                        <label class="input-label-producto-text" for="categoria">Categoria</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container-producto">
+                        <input name="Categoria" id="categoria" class="input-producto" type="text"
+                            placeholder="Categoria" required data-categoria />
+
+                    </div>
+                    <div class="input-label-producto">
+                        <label class="input-label-producto-text" for="producto">Nombre del Producto</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+
+                    </div>
+                    <div class="input-container-producto">
+                        <input name="Producto" id="producto" class="input-producto" type="text"
+                            placeholder="Nombre del producto" required data-producto />
+                    </div>
+                    <div class="input-label-producto">
+                        <label class="input-label-producto-text" for="precio">Precio del Producto</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container-producto">
+                        <input name="Precio" id="precio" class="input-producto" type="text"
+                            placeholder="Precio del Producto" required data-precio />
+                    </div>
+                    <div class="input-label-producto">
+                        <label class="input-label-producto-text" for="descripcion">Descripcion del Producto</label>
+                        <span class="input-menssage-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container-producto">
+                        <input name="Descripcion" id="descripcion" class="input-producto" type="text"
+                            placeholder="Descripcion del Producto" required data-descripcion />
+
+                    </div>
+                    <div class="button-producto">
+                        <button type="submit" class="button ">Agregar producto</button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+            integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="../controllers/registro.controller.js"></script>
+    </div>
+</body>
+<footer>
+    <div class="tudo footer-container">
+        <div class="footer-box">
+            <section class="footer-logo">
+                <img src="../img/Logo.png">
+            </section>
+            <section class="footer-link">
+                <ul>
+                    <li><a class="footer-quien" href="#">Quienes somos</a></li>
+                    <li><a class="footer-politica" href="#">Politica de privacidad</a></li>
+                    <li><a class="footer-programa" href="#">Programa de fidelidad</a></li>
+                    <li><a class="footer-nuestras" href="#">Nuestras Tiendas</a></li>
+                    <li><a class="footer-quiero" href="#">Quiero ser franquiciado</a></li>
+                    <li> <a class="footer-anuncie" href="#">Anuncie aqui</a></li>
+
+                </ul>
+            </section>
+            <section class="footer-contacto">
+                <p class="footer-subtitulo">Hable con nosotros </p>
+                <form action="#" class="flex flex--column" data-form>
+                    <div class="input-container">
+                        <input name="nombre" id="nombre" class="footer-input-nombre" type="text" placeholder="nombre"
+                            required data-nombre />
+
+
+                    </div>
+                    <div class="input-container">
+                        <input name="mensaje" id="mensaje" class="footer-input-mensaje" type="text"
+                            placeholder="menasaje" required data-mensaje />
+
+
+                    </div>
+                    <button type="submit" class="button">Enviar </button>
+                </form>
+            </section>
+        </div>
+        <section class="footer-copyright">
+            <p class="copyright">&copy Copyright Carlos Loya - 2023</p>
+        </section>
+
+
+    </div>
+</footer>

@@ -1,0 +1,62 @@
+.container-producto {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+}
+
+.card-producto {
+    margin-top: 5%;
+    padding-left: 5%;
+    height: 240px;
+    width: 560px;
+    color: #464646;
+    font-size: 20px;
+}
+
+.card-producto-Subtitulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.card-producto__title {
+    color: #464646;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 1%;
+}
+
+.input-container-producto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+}
+
+.input-label-producto {
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    margin-bottom: 1%;
+}
+
+.input-producto {
+    width: 500px;
+    height: 56px;
+    font-size: 10pt;
+    float: left;
+
+    padding-left: 15px;
+
+
+}
+
+.input-label-producto-text {
+    padding-right: 5%;
+}
+
+.button-producto {
+    margin-top: 5%;
+    padding-left: 25%;
+
+}

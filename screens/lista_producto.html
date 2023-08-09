@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/error_general.css">
+    <link rel="stylesheet" href="../css/componentes/button.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/lista_productos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title> Loyas Geek</title>
+</head>
+
+<body>
+    <div class="tudo">
+        <section class="menu">
+            <header class="menu__header">
+                <img src="../img/Logo.png">
+            </header>
+            <div class="input-buscador">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input name="buscador" id="buscador" class="input" type="text" placeholder="¿Que deseas buscar?">
+            </div>
+        </section>
+        <main class="productos-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table__column--p">urlImagen</th>
+                        <th class="table__column--g">Categoria</th>
+                        <th class="table__column--g">Producto</th>
+                        <th class="table__column--g">Precio</th>
+
+                        <th class="table__column--m table__align--right">
+                            <a href="./registrar_producto.html" class="simple-button simple-button--add">Nuevo
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody data-table></tbody>
+            </table>
+            <div class="modal-container modal--close">
+                <article class="modal">
+                    <h2 class="modal__title">Eliminar</h2>
+                    <button class="modal__close">X</button>
+                    <p class="modal__text">¿Deseas continuar?</p>
+                    <div class="modal__button-container">
+                        <button class="modal__button modal__button--confirm">
+                            Eliminar
+                        </button>
+                        <button class="modal__button">No eliminar</button>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="../controllers/producto.controller.js"></script>
+</body>
+<footer>
+    <div class="tudo footer-container">
+        <div class="footer-box">
+            <section class="footer-logo">
+                <img src="../img/Logo.png">
+            </section>
+            <section class="footer-link">
+                <ul>
+                    <li><a class="footer-quien" href="#">Quienes somos</a></li>
+                    <li><a class="footer-politica" href="#">Politica de privacidad</a></li>
+                    <li><a class="footer-programa" href="#">Programa de fidelidad</a></li>
+                    <li><a class="footer-nuestras" href="#">Nuestras Tiendas</a></li>
+                    <li><a class="footer-quiero" href="#">Quiero ser franquiciado</a></li>
+                    <li> <a class="footer-anuncie" href="#">Anuncie aqui</a></li>
+
+                </ul>
+            </section>
+            <section class="footer-contacto">
+                <p class="footer-subtitulo">Hable con nosotros </p>
+                <form action="#" class="flex flex--column" data-form>
+                    <div class="input-container">
+                        <input name="nombre" id="nombre" class="footer-input-nombre" type="text" placeholder="nombre"
+                            required data-nombre />
+
+
+                    </div>
+                    <div class="input-container">
+                        <input name="mensaje" id="mensaje" class="footer-input-mensaje" type="text"
+                            placeholder="menasaje" required data-mensaje />
+
+
+                    </div>
+                    <button type="submit" class="button">Enviar </button>
+                </form>
+            </section>
+        </div>
+        <section class="footer-copyright">
+            <p class="copyright">&copy Copyright Carlos Loya - 2023</p>
+        </section>
+
+
+    </div>
+</footer>
